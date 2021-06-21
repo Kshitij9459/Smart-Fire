@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }}</title>
+      <!-- <link rel="stylesheet" href="../static/style.css/"> -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    
+   </head>
+   <body>
+      <h1>Temperature/humidity/smoke </h1>
+      <canvas id="temperature_chart" width="1500" height="600"></canvas>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+   </body>
+   
+</html>
